@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  
+  <meta name="Author" content="Michael Finnegan">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="Layout techniques for fun and profit">
+  <title>Layout Techniques</title>
+<style>
+	.main{
+		width: 95%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top:50px;
+	}
+
+	.bigBox{
+		border: 1px solid black;
+		border-right: 6px solid black;
+		height: 300px;
+		width: 900px;
+		margin-left:auto;
+		margin-right:auto;
+		position: relative;
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	.box2{
+		border: 1px solid black;
+		border-right: 6px solid black;
+		height: auto;
+		width: 66%;
+		position: absolute;
+		/* background: green; */
+		padding: 8px;
+		margin-top: 20px;
+		margin-left: -80px;
+	}
+	.box3{
+		border: 1px solid black;
+		border-right: 6px solid black;
+		height: auto;
+		width: 33%;
+		/*background: green;*/
+		padding: 8px;
+		float: right;
+		
+	}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: calc(100% - 40px);
+  height: 2.5rem;            /* Footer height */
+  /*background: #180D01; */
+  left: 0px;
+  text-align: left;
+  padding-top:1rem;
+  font-size: 1.2rem;
+  color: #654321;
+
+  padding-left: 40px;
+  padding-right: 40px;
+ 
+}
+
+
+
+
+
+
+</style>
+
+ </head>
+ <body>
+ 	<div class="main">
+		<div class="bigBox">
+			<div class="box2">
+				<span style="font-weight: bold;">Css Layout Techniques: for Fun and Profit</span><br>
+			</div>
+			<br><br><br><br>
+			<p>Positioning is pretty easy to understand once it's explained in clear terms.</p>
+			<div class="box3">What is CSS positioning?</div>
+			
+			<div class="footer">Footer Start here <br>
+			</div>
+
+
+		</div> <!-- end BigBox -->
+	</div> <!-- end main -->
+ </body>
+</html>
